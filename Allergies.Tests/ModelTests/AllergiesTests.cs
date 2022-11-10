@@ -20,7 +20,7 @@ namespace Allergies.Tests
     {
       Allergens testAllergens = new Allergens();
 
-      Assert.AreEqual("eggs, ", testAllergens.SickoZone(1));
+      Assert.AreEqual("eggs", testAllergens.SickoZone(1));
     }
     [TestMethod]
     public void SickoZone_ReturnsAllAllergens_String()

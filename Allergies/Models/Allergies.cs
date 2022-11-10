@@ -29,6 +29,11 @@ namespace Allergies
           allergyScore -= intAllergenValue;
           Console.WriteLine("allergyScore:");
           Console.WriteLine(allergyScore);
+          if (allergyScore == 0)
+          {
+            userAllergyStr = userAllergyStr + MakesMeSick[i];
+            return userAllergyStr;
+          }
           userAllergyStr = userAllergyStr + MakesMeSick[i] + ", ";
           Console.WriteLine("userAllergyStr");
           Console.WriteLine(userAllergyStr);
